@@ -2,7 +2,7 @@
 name = "base-app"
 version = "0.1.0"
 description = ""
-authors = ["Liam Tiernan <ltiernan@mmitnetwork.com>"]
+authors = ["Liam Tiernan <liamptiernan@gmail.com>"]
 readme = "README.md"
 packages = [{include = "base_app"}]
 
@@ -12,6 +12,9 @@ fastapi = "^0.92.0"
 SQLAlchemy = "^2.0.4"
 alembic = "^1.9.4"
 uvicorn = "^0.20.0"
+python-dotenv = "^1.0.0"
+psycopg2-binary = "^2.9.6"
+psycopg = {extras = ["binary"], version = "^3.1.9"}
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.1.0"

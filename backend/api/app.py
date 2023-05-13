@@ -1,6 +1,10 @@
 from fastapi import FastAPI
+from backend.api.routes import users
 
 app = FastAPI()
+
+prefix = "/api/v1"
+app.include_router(users.router, prefix=prefix)
 
 
 @app.get("/")
